@@ -14,7 +14,7 @@ The aim is not just prediction but also **explainability** – uncovering what d
 ---
 
 ## 📂 Project Structure
-
+```plaintext
 Mobile-Price-Prediction/
 │── data/
 │ └── mobile_prices.csv # Dataset
@@ -23,7 +23,7 @@ Mobile-Price-Prediction/
 │── models/
 │ └── best_rf_model.pkl # Saved Random Forest model
 │── README.md # Project documentation
-
+```
 
 ---
 
@@ -44,10 +44,11 @@ Mobile-Price-Prediction/
 
 ---
 
-Install dependencies:
+Install dependencies: 
+  ```bash
 
 pip install -r requirements.txt
-
+```
 
 Open Jupyter Notebook:
 
