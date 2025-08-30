@@ -1,98 +1,72 @@
-📊 Predicting Mobile Phone Prices in India using Machine Learning
-🔎 Overview
+# 📱 Mobile Price Prediction: Understanding Key Factors Behind Rising Costs in India using Random Forest Algorithm
 
-This project explores the factors influencing mobile phone prices in India and builds a Random Forest Regression model to predict prices based on various specifications.
+## 📖 Overview
+This project explores the factors influencing mobile phone prices in India. Using **EDA, feature engineering, and Random Forest Regression**, the model predicts prices and identifies the most significant contributors.  
+The aim is not just prediction but also **explainability** – uncovering what drives mobile pricing trends.
 
-The workflow includes:
+---
 
-Exploratory Data Analysis (EDA)
+## ⚙️ Tech Stack
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
+- Scikit-learn (Random Forest, GridSearchCV, Cross-validation)
+- Jupyter Notebook
 
-Data Preprocessing (cleaning & scaling)
+---
 
-Model Building (Random Forest with hyperparameter tuning)
+## 📂 Project Structure
 
-Model Evaluation (R², MAE, RMSE, and Cross-Validation)
-
-Insights on which features drive mobile phone prices
-
-🚀 Features
-
-Data Analysis & Visualization: Distribution, feature importance, and correlations
-
-Random Forest Regression: Trained with hyperparameter tuning (GridSearchCV)
-
-Model Evaluation: R², MAE, RMSE, and Cross-Validation R²
-
-Feature Importance Insights: Identifying what impacts mobile phone pricing the most
-
-Saved Model: Exported trained model for reuse
-
-🛠️ Tech Stack
-
-Python
-
-Pandas, NumPy → Data manipulation
-
-Matplotlib, Seaborn → Data visualization
-
-Scikit-learn → ML model building & evaluation
-
-📂 Project Structure
 Mobile-Price-Prediction/
-│── data/                # Dataset (CSV file)
-│── notebooks/           # Jupyter notebooks with step-by-step code
-│── models/              # Saved trained model (Random Forest)
-│── results/             # Evaluation results, charts, and feature importances
-│── README.md            # Project documentation
-│── requirements.txt     # Required dependencies
+│── data/
+│ └── mobile_prices.csv # Dataset
+│── notebooks/
+│ └── analysis.ipynb # Main Jupyter notebook
+│── models/
+│ └── best_rf_model.pkl # Saved Random Forest model
+│── README.md # Project documentation
 
-📊 Results
 
-Best Model: Random Forest Regressor
+---
 
-R² Score (Train/Test Split): ~0.82
+## 🔑 Key Steps
+1. **Data Loading & Cleaning** – Preparing the dataset for analysis.  
+2. **Exploratory Data Analysis (EDA)** – Understanding price distributions & patterns.  
+3. **Preprocessing** – Feature scaling, encoding, handling missing values.  
+4. **Model Training** – Random Forest with hyperparameter tuning.  
+5. **Evaluation** – R² Score, Cross-validation, visualization of results.  
+6. **Model Saving** – Exporting the trained model for future use.  
 
-Cross-Validation R²: ~0.80
+---
 
-MAE: ~0.18
+## 📊 Results
+- **Best R² Score (Train):** 0.95+  
+- **Cross-validation R² Score (CV):** ~0.89  
+- **Key Factors Driving Price:** Battery capacity, RAM, storage, processor speed, brand effect.  
 
-RMSE: ~0.26
-
-📌 Interpretation: The model explains ~82% of the variance in mobile phone prices, performing well across multiple folds (CV R² ~80%).
-
-💡 Key Insights
-
-RAM, Processor, and Battery are major drivers of price.
-
-Brand & screen size show secondary but noticeable influence.
-
-Random Forest was chosen due to its robustness, ability to handle non-linear relationships, and feature importance insights.
-
-🔧 Installation & Usage
-
-Clone the repo:
-
-git clone https://github.com/your-username/mobile-price-prediction.git
-cd mobile-price-prediction
-
+---
 
 Install dependencies:
 
 pip install -r requirements.txt
 
 
-Run the Jupyter notebook:
+Open Jupyter Notebook:
 
 jupyter notebook
 
-🎯 Future Improvements
 
-Try other models (XGBoost, Gradient Boosting, Neural Networks)
+Run analysis.ipynb to see the results.
 
-Perform feature engineering for categorical data
+📌 Future Improvements
 
-Build a web app (Streamlit/Flask) to predict prices interactively
+Try XGBoost / LightGBM for performance comparison.
 
-🤝 Contribution
+Add SHAP / LIME explainability for deeper insights.
 
-Contributions are welcome! Feel free to fork this repo, open issues, or submit pull requests.
+Deploy as a Streamlit web app for interactive predictions.
+
+✨ Author
+
+Developed by Your Name (BCA Final Year Project)
+
+
+
